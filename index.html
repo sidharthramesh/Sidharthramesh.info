@@ -9,6 +9,7 @@
   <meta name="keywords" content="web, design, app, development">
   <meta name="author" content="Sidharth Ramesh">
   <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="icon" type="image/png" href="assets/img/logo.png">
 </head>
 <body>
 
@@ -26,8 +27,9 @@
     <div id="viewport" class="l-viewport">
       <div class="l-wrapper">
         <header class="header">
-          <a class="header--logo" href="#0">
-            <h4>SR Studio</h4>
+          <a class="header--logo">
+            <img src="assets/img/logo.png" alt="Global">
+            <p>Studio</p>
           </a>
           <button class="header--cta cta">Hire Us</button>
           <div class="header--nav-toggle">
@@ -84,7 +86,7 @@
                   <li class="slider--item slider--item-left">
                     <a>
                       <div class="slider--item-image">
-                        <img src="assets/img/avinash.jpeg" alt="Victory">
+                        <img src="assets/img/avinash.jpg" alt="Victory">
                       </div>
                       <p class="slider--item-title">Avinash Rao G</p>
                       <p class="slider--item-description">Marketing and Sales</p>
@@ -108,6 +110,7 @@
                       <p class="slider--item-description">Front End UX Developer</p>
                     </a>
                   </li>
+                  <!--
                   <li class="slider--item slider--item-right">
                     <a>
                       <div class="slider--item-image">
@@ -117,6 +120,7 @@
                       <p class="slider--item-description">Application Developer</p>
                     </a>
                   </li>
+                  -->
                 </ul>
                 <div class="slider--prev">
                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -176,10 +180,10 @@
             <div class="hire">
               <h2>You want us to do</h2>
               <!-- checkout formspree.io for easy form setup -->
-              <form class="work-request">
+              <form class="work-request" action="https://formspree.io/tornadoalert@gmail.com" method="POST">
                 <div class="work-request--options">
                   <span class="options-a">
-                    <input id="opt-1" type="checkbox" value="app design">
+                    <input id="opt-1" name="appdesign" type="checkbox">
                     <label for="opt-1">
                       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                       viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
@@ -189,8 +193,8 @@
                       </svg>
                       App Design
                     </label>
-                    <input id="opt-3" type="checkbox" value="web design">
-                    <label for="opt-3">
+                    <input id="opt-2" name="webdesign" type="checkbox">
+                    <label for="opt-2">
                       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                       viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
                       <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
@@ -201,8 +205,8 @@
                     </label>
                   </span>
                   <span class="options-b">
-                    <input id="opt-4" type="checkbox" value="graphic design">
-                    <label for="opt-5">
+                    <input id="opt-3" name="graphicsdesign" type="checkbox">
+                    <label for="opt-3">
                       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                       viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
                       <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
@@ -211,9 +215,8 @@
                       </svg>
                       Graphic Design
                     </label>
-
-                    <input id="opt-5" type="checkbox" value="automation">
-                    <label for="opt-5">
+                    <input id="opt-4" name="automation" type="checkbox">
+                    <label for="opt-4">
                       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                       viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
                       <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
@@ -226,11 +229,11 @@
                 </div>
                 <div class="work-request--information">
                   <div class="information-name">
-                    <input id="name" type="text" spellcheck="false">
+                    <input id="name" name="name" type="text" spellcheck="false">
                     <label for="name">Name</label>
                   </div>
                   <div class="information-email">
-                    <input id="email" type="email" spellcheck="false">
+                    <input id="email"name="email" type="email" spellcheck="false">
                     <label for="email">Email</label>
                   </div>
                 </div>
