@@ -77,7 +77,7 @@ var TextScramble = function () {
   return TextScramble;
 }();
 
-var phrases = ['Do not go gentle', 'into that good night;','Rage,','rage against the dying','of good design.','','',''];
+var phrases = ['Do not go gentle', 'into that good night;','Rage,','rage against the dying','of good design.','good design','good design','','',''];
 
 var el = document.querySelector('.scramble');
 var fx = new TextScramble(el);
